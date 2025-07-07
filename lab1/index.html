@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text docrator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="manifest" href="./manifest.json" />
+  </head>
+  <body>
+    <p id="text">
+      Dolore aliqua non ullamco commodo aliquip reprehenderit Lorem consequat
+      nisi adipisicing. Anim laborum sit ex cupidatat ipsum tempor officia culpa
+      adipisicing aliqua nulla. Aliquip culpa proident aliquip eu enim tempor
+      aliqua elit tempor cillum et minim irure. Non ad consequat amet minim
+      irure.
+    </p>
+    <table border="1" cellspacing="0" vertical-align: top;>
+      <tr>
+        <th>fontFamily</th>
+        <th>textAlign</th>
+        <th>lineHeight</th>
+        <th>letterSpacing</th>
+        <th>textIndent</th>
+        <th>textTransform</th>
+        <th>textDecoration</th>
+        <th>textBorder</th>
+        <th>Bordercolor</th>
+      </tr>
+      <tr>
+        <td>
+          <input type="radio" name="font" value="arial" checked /> arial<br />
+          <input type="radio" name="font" value="courier" /> courier<br />
+          <input type="radio" name="font" value="georgia" /> georgia<br />
+          <input type="radio" name="font" value="impact" /> impact<br />
+          <input type="radio" name="font" value="times" /> times<br />
+          <input type="radio" name="font" value="verdana" /> verdana<br />
+        </td>
+        <td>
+          <input type="radio" name="align" value="left" checked /> left<br />
+          <input type="radio" name="align" value="center" /> center<br />
+          <input type="radio" name="align" value="right" /> right<br />
+          <input type="radio" name="align" value="justify" /> justify<br />
+        </td>
+        <td>
+          <input type="radio" name="line" value="normal" checked /> normal<br />
+          <input type="radio" name="line" value="1.0" /> 1.0px<br />
+          <input type="radio" name="line" value="1.5" /> 1.5px<br />
+        </td>
+        <td>
+          <input type="radio" name="spacing" value="normal" checked />
+          normal<br />
+          <input type="radio" name="spacing" value="-1px" /> -1px<br />
+          <input type="radio" name="spacing" value="3px" /> 3px<br />
+        </td>
+        <td>
+          <input type="radio" name="indent" value="0px" checked /> 0px<br />
+          <input type="radio" name="indent" value="5px" /> 5px<br />
+          <input type="radio" name="indent" value="25px" /> 25px<br />
+        </td>
+        <td>
+          <input type="radio" name="transform" value="none" checked />
+          none<br />
+          <input type="radio" name="transform" value="capitalize" />
+          capitalize<br />
+          <input type="radio" name="transform" value="lowercase" />
+          lowercase<br />
+        </td>
+        <td>
+          <input type="radio" name="decoration" value="none" checked />
+          none<br />
+          <input type="radio" name="decoration" value="line-through" />
+          line-through<br />
+          <input type="radio" name="decoration" value="overline" />
+          overline<br />
+          <input type="radio" name="decoration" value="underline" />
+          underline<br />
+        </td>
+        <td>
+          <input type="radio" name="border" value="none" /> none<br />
+          <input type="radio" name="border" value="dotted" checked />
+          dotted<br />
+          <input type="radio" name="border" value="double" /> double<br />
+          <input type="radio" name="border" value="groove" /> groove<br />
+          <input type="radio" name="border" value="dashed" /> dashed<br />
+          <input type="radio" name="border" value="inset" /> inset<br />
+          <input type="radio" name="border" value="outset" /> outset<br />
+          <input type="radio" name="border" value="ridge" /> ridge<br />
+        </td>
+        <td>
+          <input type="radio" name="borderColor" value="none" />
+          none<br />
+          <input type="radio" name="borderColor" value="pink" /> pink<br />
+          <input type="radio" name="borderColor" value="red" checked />
+          red<br />
+          <input type="radio" name="borderColor" value="green" /> green<br />
+          <input type="radio" name="borderColor" value="blue" /> blue<br />
+          <input type="radio" name="borderColor" value="yellow" /> yellow<br />
+          <input type="radio" name="borderColor" value="purple" /> purple<br />
+        </td>
+      </tr>
+    </table>
+    <script src="./main.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js");
+      }
+    </script>
+  </body>
+</html>
